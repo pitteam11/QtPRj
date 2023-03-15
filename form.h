@@ -19,8 +19,14 @@ public:
 
     ~Form();
 
+signals:
+   void on_autorization();
+
+
 private slots:
     void on_pushButton_clicked();
+
+
 
 private:
     Ui::Form *ui;

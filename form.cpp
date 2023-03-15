@@ -6,6 +6,9 @@ Form::Form(QWidget *parent) :
     ui(new Ui::Form)
 {
     ui->setupUi(this);
+
+
+
 }
 
 Form::~Form()
@@ -19,6 +22,7 @@ void Form::on_pushButton_clicked()
     pas = ui->lineEdit_2->text();
     if(log.length() > 0 && pas.length() > 0){
         this->hide();
+        emit on_autorization();
     }
 }
 

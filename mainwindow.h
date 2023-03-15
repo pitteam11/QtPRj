@@ -18,15 +18,15 @@ public:
 
 private slots:
     void on_pushButton_clicked();
-
     void on_pushButton_2_clicked();
-
     void on_pb_login_clicked();
+    void on_autorization_slot();
 
 private:
     Ui::MainWindow *ui;
     Form *login = nullptr;
 
     void show_simple_nums(int up_val);
+    int r = 0;
 };
 #endif // MAINWINDOW_H
